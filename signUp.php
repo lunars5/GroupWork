@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"/>
     <title>SignUp</title>
 </head>
+
 <body>
 <form action= "signup.php" method= "GET">
 	<p>Sign Up:</p>
+	<div class="form-group"> 
 	<label>User Name</label> <input type="text" placeholder = "test" name="userName"/>
     <label>Email Address</label> <input type="text" placeholder = "test" name="email"/>
 	<label>Password</label> <input type="text" placeholder = "test" name="password"/>
@@ -14,6 +18,7 @@
 	<label>Post Code</label> <input type="text" placeholder = "test" name="postCode"/>
 	<label>Phone Number</label> <input type="text" placeholder = "test" name="phoneNumber"/>
 	<input type="submit" name="submit" value="Submit" />
+	</div>
 </form>
 
 <?php
@@ -44,6 +49,10 @@
 	];
 	$stmt -> execute($input);
 ?>
+
+<footer> &copy;2022 Northampton Speciality Chocolate. 
+All Rights Reserved. Privacy and Terms of Service</footer>
+
 
 </body>
 </html>
