@@ -13,6 +13,7 @@ ul {
   list-style-type: none;
 }
 
+
 main > * + * {
   margin-block-start: 1em;
 }
@@ -25,6 +26,7 @@ main > * {
 /* the bit you're probably here for */
 nav {
   backdrop-filter: blur(5px);
+  border-radius: 10px;
   background-color: #F7ECDE;
   position: sticky;
   top: 0;
@@ -37,16 +39,26 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  font-size: 1.5em;
   color: #000000;
 }
 
 nav > ul {
   display: flex;
   align-items: center;
-  margin-right: 25em;
+  margin-right: 15em;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 1rem;
+  
+}
+.container {
+  background: url(/dist/images/chocolate-making-experience5.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 65vh;
+  width: 100%;
 }
 
 footer {
