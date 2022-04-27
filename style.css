@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+footer {
+  padding: 1rem;
+  background-color: #F7ECDE;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main > * + * {
+  margin-block-start: 1em;
+}
+
+main > * {
+  max-width: 70rem;
+  margin-inline: auto;
+}
+
+/* the bit you're probably here for */
+nav {
+  backdrop-filter: blur(5px);
+  background-color: #F7ECDE;
+  position: sticky;
+  top: 0;
+}
+
+/* not needed for the funky stuff */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #000000;
+  gap: 1rem;
+  min-height: 70px;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
