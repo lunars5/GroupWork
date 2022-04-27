@@ -9,11 +9,6 @@ html {
   font-family: sans-serif;
 }
 
-footer {
-  padding: 1rem;
-  background-color: #F7ECDE;
-}
-
 ul {
   list-style-type: none;
 }
@@ -23,7 +18,7 @@ main > * + * {
 }
 
 main > * {
-  max-width: 70rem;
+  max-width: 85rem;
   margin-inline: auto;
 }
 
@@ -43,14 +38,18 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
   color: #000000;
-  gap: 1rem;
-  min-height: 70px;
 }
 
 nav > ul {
   display: flex;
   align-items: center;
+  margin-right: 25em;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+footer {
+  padding: 1rem;
+  background-color: #F7ECDE;
 }
