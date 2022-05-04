@@ -46,14 +46,18 @@ nav {
 nav > ul {
   display: flex;
   align-items: center;
-  margin-right: 15em;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 4em;
+  margin-right: 1em;
+
   
 }
+nav > ul >li:hover {
+  opacity: 50%;
+}
 .container {
-  background: url(/dist/images/chocolate-making-experience5.jpg);
+  background: url(/images/chocolate-making-experience5.jpg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -61,7 +65,31 @@ nav > ul {
   width: 100%;
 }
 
+
 footer {
   padding: 1rem;
   background-color: #F7ECDE;
+}
+a{
+  text-decoration: none;
+  color: #000000;
+}
+.usericon{
+  height: 1.7em;
+  
+}
+
+.shoppingcart {
+height: 1.7em;
+
+}
+
+.logo {
+
+  height: 4.5em;
+  width: 4.5em;
+  margin-left: 2.5em;
+}
+input{
+  border: 2px solid black;
 }
