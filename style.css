@@ -93,3 +93,33 @@ height: 1.7em;
 input{
   border: 2px solid black;
 }
+
+/*contact css*/
+
+.links {
+  padding:10px;
+  margin: 30px;  
+  color:black;
+}
+
+.links a:link {
+  color:black;
+}
+
+.links a:visited {
+  color:black;
+}
+
+.links a:hover {
+  color:#99CAC2;
+}
+
+form {
+  padding:20px;
+  display: grid;
+  width: 500px;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  grid-gap: 1em;
+  }
+
