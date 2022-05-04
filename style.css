@@ -50,21 +50,21 @@ nav > ul {
   flex-wrap: wrap;
   gap: 4em;
   margin-right: 1em;
-
-  
 }
 nav > ul >li:hover {
   opacity: 50%;
 }
-.container {
-  background: url(/images/chocolate-making-experience5.jpg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 65vh;
-  width: 100%;
-}
 
+
+
+.mainpic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding-bottom: 1em;
+  
+}
 
 footer {
   padding: 1rem;
@@ -94,32 +94,112 @@ input{
   border: 2px solid black;
 }
 
-/*contact css*/
 
-.links {
-  padding:10px;
-  margin: 30px;  
-  color:black;
+input {
+  border: none;
 }
 
-.links a:link {
-  color:black;
+
+
+.ghost-round {
+  cursor: pointer;
+  background: none;
+  border: 1px solid black;
+  border-radius: 25px;
+  color: black;
+  background-color: #99CAC2 ;
+  align-self: flex-end;
+  font-size: 19px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2.5em;
+  margin-top: auto;
+  margin-bottom: 25px;
+
 }
 
-.links a:visited {
-  color:black;
+.ghost-round:hover {
+  opacity: 50%;
 }
 
-.links a:hover {
-  color:#99CAC2;
+.input-line {
+  background: none;
+  margin-bottom: 10px;
+  line-height: 2.4em;
+  color: black;
+
+  letter-spacing: 0px;
+  letter-spacing: 0.02rem;
+  font-size: 19px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid black;
 }
 
-form {
-  padding:20px;
-  display: grid;
-  width: 500px;
-  grid-template-columns: 50% 50%;
+.full-width {
+  width: 100%;
+}
+
+.input-fields {
+  margin-top: 25px;
+}
+
+.wrapper{
+
+  display: flex;
+
   align-items: center;
-  grid-gap: 1em;
-  }
+  justify-content: center;
+  background: #F7ECDE;
+  
+}
 
+.content {
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  z-index: 5;
+}
+
+
+
+
+.window2 {
+  z-index: 100;
+  color: black;
+  position: relative;
+  display: flex;
+  box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  height: 200px;
+  width: 360px;
+  margin-bottom: 16em;
+  
+}
+
+.overlay {
+  background: white;
+  height: 200px;
+  position: absolute;
+  width: 360px;
+  z-index: 1;
+}
+
+
+
+.loginbody {
+background-color:#F7ECDE ;
+text-align: center;
+}
+
+.loginlogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 18em;
+}
+footer{
+text-align: center;
+}
