@@ -9,15 +9,9 @@
 <body>
 <!-- partial:index.partial.html -->
 <div class="container">
-  <nav>
-    <div logo><img src="/dist/images/pop.gif" alt="Logo"/></div>
-    <ul>
-      <li>Home</li>
-      <li>About Us</li>
-      <li>Products</li>
-      <li>Contact Us</li>
-    </ul>
-  </nav>
+<?php
+require 'templates/navbar.php'
+?>
   <main>
     <div class="container"> </div>
 
@@ -49,10 +43,6 @@
 
     
   </main>
-  <footer>©2022 Northampton Speciality Chocolate. 
-    All Rights Reserved. Privacy and Terms of Service</footer>
-</div>
-<!-- partial -->
-  
-</body>
-</html>
+<?php
+require 'templates/footer.php'
+?>
