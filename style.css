@@ -1,203 +1,248 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  line-height: 1.5;
-  font-family: sans-serif;
-}
-
-ul {
-  list-style-type: none;
-}
-
-
-main > * + * {
-  margin-block-start: 1em;
-}
-
-main > * {
-  max-width: 85rem;
-  margin-inline: auto;
-}
-
-nav {
-  backdrop-filter: blur(5px);
-  border-radius: 10px;
-  background-color: #F7ECDE;
-  position: sticky;
-  top: 0;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  font-size: 1.5em;
-  color: #000000;
-}
-
-nav > ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 4em;
-  margin-right: 1em;
-}
-nav > ul >li:hover {
-  opacity: 50%;
-}
-
-
-
-.mainpic {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  padding-bottom: 1em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   
-}
-
-footer {
-  padding: 1rem;
-  background-color: #F7ECDE;
-}
-a{
-  text-decoration: none;
-  color: #000000;
-}
-.usericon{
+  html {
+    line-height: 1.5;
+    font-family: sans-serif;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  
+  main > * + * {
+    margin-block-start: 1em;
+  }
+  
+  main > * {
+    max-width: 85rem;
+    margin-inline: auto;
+  }
+  
+  /* the bit you're probably here for */
+  nav {
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    background-color: #F7ECDE;
+    position: sticky;
+    top: 0;
+  }
+  
+  /* not needed for the funky stuff */
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+    color: #000000;
+  }
+  
+  nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 4em;
+    margin-right: 14em;
+    
+  }
+  nav > ul >li:hover {
+    opacity: 50%;
+  }
+  
+  
+  
+  .mainpic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding-bottom: 1em;
+    
+  }
+  
+  footer {
+    padding: 1rem;
+    background-color: #F7ECDE;
+  }
+  a{
+    text-decoration: none;
+    color: #000000;
+  }
+  .usericon{
+    height: 1.7em;
+    
+  }
+  
+  .shoppingcart {
   height: 1.7em;
   
-}
-
-.shoppingcart {
-height: 1.7em;
-
-}
-
-.logo {
-
-  height: 4.5em;
-  width: 4.5em;
-  margin-left: 2.5em;
-}
-input{
-  border: 2px solid black;
-}
-
-
-input {
-  border: none;
-}
-
-
-
-.ghost-round {
-  cursor: pointer;
-  background: none;
-  border: 1px solid black;
-  border-radius: 25px;
-  color: black;
-  background-color: #99CAC2 ;
-  align-self: flex-end;
-  font-size: 19px;
-  font-size: 1.2rem;
-  font-weight: 300;
-  line-height: 2.5em;
-  margin-top: auto;
-  margin-bottom: 25px;
-
-}
-
-.ghost-round:hover {
-  opacity: 50%;
-}
-
-.input-line {
-  background: none;
-  margin-bottom: 10px;
-  line-height: 2.4em;
-  color: black;
-
-  letter-spacing: 0px;
-  letter-spacing: 0.02rem;
-  font-size: 19px;
-  font-size: 1.2rem;
-  border-bottom: 1px solid black;
-}
-
-.full-width {
-  width: 100%;
-}
-
-.input-fields {
-  margin-top: 25px;
-}
-
-.wrapper{
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-  background: #F7ECDE;
+  }
   
-}
-
-.content {
-  padding-left: 25px;
-  padding-right: 25px;
-  display: flex;
-  -webkit-flex-flow: column;
-  -ms-flex-flow: column;
-  flex-flow: column;
-  z-index: 5;
-}
-
-
-
-
-.window2 {
-  z-index: 100;
-  color: black;
-  position: relative;
-  display: flex;
-  box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  height: 200px;
-  width: 360px;
-  margin-bottom: 16em;
+  .logo {
   
-}
-
-.overlay {
-  background: white;
-  height: 200px;
-  position: absolute;
-  width: 360px;
-  z-index: 1;
-}
-
-
-
-.loginbody {
-background-color:#F7ECDE ;
-text-align: center;
-}
-
-.loginlogo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 18em;
-}
-
-footer{
-text-align: center;
-}
+    height: 4.5em;
+    width: 4.5em;
+    margin-left: 2.5em;
+  }
+  input{
+    border: 2px solid black;
+  }
+  
+  
+  input {
+    border: none;
+  }
+  
+  
+  
+  .ghost-round {
+    cursor: pointer;
+    background: none;
+    border: 1px solid black;
+    border-radius: 25px;
+    color: black;
+    background-color: #99CAC2 ;
+    align-self: flex-end;
+    font-size: 19px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2.5em;
+    margin-top: auto;
+    margin-bottom: 25px;
+  
+  }
+  .button{
+    margin-left: 45em;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border: 1px solid black;
+    border-radius: 25px;
+    color: black;
+    background-color: #99CAC2 ;
+    align-self: flex-end;
+    font-size: 19px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2.5em;
+    margin-top: auto;
+    margin-bottom: 25px;
+    width: 10em;
+  
+  }
+  
+  .ghost-round:hover {
+    opacity: 50%;
+  }
+  
+  .input-line {
+    background: none;
+    margin-bottom: 10px;
+    line-height: 2.4em;
+    color: black;
+  
+    letter-spacing: 0px;
+    letter-spacing: 0.02rem;
+    font-size: 19px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid black;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .input-fields {
+    margin-top: 25px;
+  }
+  
+  .wrapper{
+  
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+    background: #F7ECDE;
+    
+  }
+  
+  .content {
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    -webkit-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    z-index: 5;
+  }
+  
+  .window2 {
+    z-index: 100;
+    color: black;
+    position: relative;
+    display: flex;
+    box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    height: 200px;
+    width: 360px;
+    margin-bottom: 16em;
+    
+  }
+  
+  .overlay {
+    background: white;
+    height: 200px;
+    position: absolute;
+    width: 360px;
+    z-index: 1;
+  }
+  .windowsignup {
+    z-index: 100;
+    color: black;
+    position: relative;
+    display: flex;
+    box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    height: 500px;
+    width: 360px;
+    margin-bottom: 16em;
+    
+  }
+  
+  .overlaysignup {
+    background: white;
+    height: 500px;
+    position: absolute;
+    width: 360px;
+    z-index: 1;
+  }
+  
+  
+  
+  .loginbody {
+  background-color:#F7ECDE ;
+  text-align: center;
+  }
+  
+  .loginlogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18em;
+  }
+  footer{
+  text-align: center;
+  }
+  
+  .names{
+    align-items: center;
+    text-align: center;
+    
+  }
