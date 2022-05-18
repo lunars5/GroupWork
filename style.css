@@ -23,7 +23,6 @@ main > * {
   margin-inline: auto;
 }
 
-/* the bit you're probably here for */
 nav {
   backdrop-filter: blur(5px);
   border-radius: 10px;
@@ -31,8 +30,6 @@ nav {
   position: sticky;
   top: 0;
 }
-
-/* not needed for the funky stuff */
 
 nav {
   display: flex;
@@ -200,6 +197,7 @@ text-align: center;
   margin-right: auto;
   width: 18em;
 }
+
 footer{
 text-align: center;
 }
