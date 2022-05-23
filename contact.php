@@ -1,3 +1,5 @@
+<!-- Creates the session for knowing if an admin or user is logged in -->
+<!-- Also grabs the database connection --> 
 <?php 
 session_start();
 require 'database.php';
@@ -7,29 +9,20 @@ require 'database.php';
 <head>
   <meta charset="UTF-8">
   <title>Northampton Chocolates</title>
+     <!-- Links stylesheet -->
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 
 <div class="container">
-<nav>
-    <a href="index.php"><img src="/images/Logo.png" alt="Logo" class="logo"/></a>
-    <ul>
-      
-      <li><a href="index.php">Home</a></li>
-      <li><a href="about.php">About</a></li>
-      <li><a href="products.php">Products</a></li>
-      <li><a href="contact.php">Contact Us</a></li>
-      <li><a href="login.php"><img src ="/images/usericon.png" alt="User" class="usericon"></a></li>
+  <!-- Sets the navigation bar -->
+<?php
+require 'templates/navbar.php'
+?>
 
-      <li><a href="cart.php"><img src ="/images/shoppingcart.png" alt="Shopping Cart" class="shoppingcart"></a></li>
-
-      <input type="text" placeholder="Search">
-    </ul>
-    
-  </nav>
   <main>
+    <!-- Creates the insert query for inserting into the enquriries table -->
         <?php 
         if(isset($_POST['submit'])){
     $stmt = $pdo -> prepare('INSERT INTO Enquiries(enquiry_firstname, enquiry_surname, enquiry_email, enquiry_text, enquiry_status) VALUES (:enquiry_firstname, :enquiry_surname, :enquiry_email, :enquiry_text, :enquiry_status)');
@@ -45,6 +38,7 @@ require 'database.php';
 }
 else{
     ?>
+    <!-- Creates the form and links the query -->
     <h1>Contact Us</h1>
     <form action= "contact.php" method= "POST">
         <input type='text' placeholder='First name' class='input-line full-width' name="enquiry_firstname"/>
@@ -57,7 +51,7 @@ else{
         }
     ?>
 
-
+<!-- Creates the social media links -->
  <h1>Social Media</h1>
 
  <div class=links>
@@ -69,14 +63,14 @@ else{
   <li><a href="https://www.instagram.com/">Instagram</a> 
 </ul>
 </div>
-
+<!-- Shows the tweets from a twitter account -->
 <a class="twitter-timeline" href="https://twitter.com/SpecialityChocs?ref_src=twsrc%5Etfw">Tweets by SpecialityChocs</a>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
   </main>
-  <footer>©2022 Northampton Speciality Chocolate. 
-    All Rights Reserved. Privacy and Terms of Service</footer>
-</div>
-  
-</body>
-</html>
+
+
+  <!-- Sets the footer -->
+  <?php
+require 'templates/footer.php'
+?>

@@ -1,5 +1,6 @@
+<!-- Creates the session for knowing if an admin or user is logged in -->
+<!-- Also grabs the database connection --> 
 <?php
-
 	session_start();
 	require 'database.php';
 ?>
@@ -9,10 +10,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Links stylesheet -->
     <link rel="stylesheet" href="style.css"/>
     <title>Admin</title>
 </head>
+<!-- Links to the other admin pages --> 
 <body>
+    <!-- Sets the navigation bar -->
     <?php require 'templates/navbar.php' ?>
     <h1>This is the admin dashboard</h1>
     <div class="button"> 
@@ -28,8 +32,7 @@
    
 </body>
 
+<!-- Sets the footer -->
 <?php
-
 require 'templates/footer.php';
 ?>
-</html>

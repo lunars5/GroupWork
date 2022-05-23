@@ -1,3 +1,5 @@
+<!-- Creates the session for knowing if an admin or user is logged in -->
+<!-- Also grabs the database connection --> 
 <?php
 ob_start();
 	session_start();
@@ -7,11 +9,13 @@ ob_start();
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css"/>
+	   <!-- Links stylesheet -->
     <title>Log in</title>
 </head>
 <body class="loginbody">
 <img src="logo.png" alt="Logo" class="loginlogo">
 
+<!-- Creates query to find users and admins, links them to the correct pages on the site -->
 <?php
 
 	if(isset($_POST['submit'])){
@@ -54,7 +58,7 @@ ob_start();
 	}
 	else{
 ?>
-
+<!-- Creates the login form -->
 <div class='bold-line'></div>
 <div class='wrapper'>
   <div class='window2'>
@@ -74,9 +78,6 @@ ob_start();
 <?php
 	}
 ?>
-<footer>
-			&copy; 2022 Northampton Speciality Chocolate. 
-All Rights Reserved. Privacy and Terms of Service
-		</footer>
-</body>
-</html>
+  <?php
+require 'templates/footer.php'
+?>

@@ -1,3 +1,4 @@
+<!-- Creates the session for knowing if an admin or user is logged in -->
 <?php
 ob_start();
 session_start();
@@ -7,11 +8,11 @@ session_start();
 <head>
   <meta charset="UTF-8">
   <title>Northampton Chocolates</title>
+       <!-- Links stylesheet -->
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
 <div class="container">
   <nav>
     <a href="index.php"><img src="/images/Logo.png" alt="Logo" class="logo"/></a>
@@ -40,6 +41,8 @@ session_start();
   </nav>
   <div class="container"> </div>
   <img src="/images/chocolate-making-experience5.jpg" alt="Logo" class="mainpic"/>
+
+  <!-- main body of about page -->
   <main>
  
 
@@ -67,14 +70,7 @@ session_start();
     Reiciendis excepturi, iste cupiditate necessitatibus et quos ipsa nesciunt quia doloribus quas molestiae, quisquam voluptas cum totam sequi error labore, ducimus eligendi eius nostrum in non laborum! Est, consequatur tempora!
     Amet voluptatem, repudiandae, numquam maxime beatae inventore voluptas aspernatur, recusandae natus perspiciatis aperiam. Exercitationem repellendus delectus tempora quo rerum, iure labore debitis, dolores aut inventore, hic blanditiis aliquid fugit sint.</p>
       
-
-
-    
   </main>
-  <footer>©2022 Northampton Speciality Chocolate. 
-    All Rights Reserved. Privacy and Terms of Service</footer>
-</div>
-<!-- partial -->
-  
-</body>
-</html>
+  <?php
+require 'templates/footer.php'
+?>

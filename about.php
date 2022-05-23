@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Northampton Chocolates</title>
+  <!-- Links stylesheet -->
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
+
 <div class="container">
+<!-- Sets the navigation bar -->
 <?php
 require 'templates/navbar.php'
 ?>
+<!-- main body of about page -->
   <main>
     <div class="container"> </div>
 
@@ -40,9 +43,8 @@ require 'templates/navbar.php'
     Amet voluptatem, repudiandae, numquam maxime beatae inventore voluptas aspernatur, recusandae natus perspiciatis aperiam. Exercitationem repellendus delectus tempora quo rerum, iure labore debitis, dolores aut inventore, hic blanditiis aliquid fugit sint.</p>
       
 
-
-    
   </main>
+  <!-- Sets the footer -->
 <?php
 require 'templates/footer.php'
 ?>

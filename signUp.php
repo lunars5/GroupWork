@@ -3,11 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	       <!-- Links stylesheet -->
     <link rel="stylesheet" href="styles.css"/>
     <title>SignUp</title>
 </head>
 
 <body>
+	<!-- Creates form for registration -->
 <form action= "signup.php" method= "GET">
 	<p>Sign Up:</p>
 	<div class="form-group"> 
@@ -20,7 +22,7 @@
 	<input type="submit" name="submit" value="Submit" />
 	</div>
 </form>
-
+<!-- Creates the database connection -->
 <?php
 	$server = 'mysql';
 	$username = 'student';
@@ -49,10 +51,6 @@
 	];
 	$stmt -> execute($input);
 ?>
-
-<footer> &copy;2022 Northampton Speciality Chocolate. 
-All Rights Reserved. Privacy and Terms of Service</footer>
-
-
-</body>
-</html>
+  <?php
+require 'templates/footer.php'
+?>

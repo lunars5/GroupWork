@@ -1,5 +1,6 @@
+<!-- Creates the session for knowing if an admin or user is logged in -->
+<!-- Also grabs the database connection --> 
 <?php
-
 	session_start();
 	require 'database.php';
 ?>
@@ -13,7 +14,8 @@
     <title>Users</title>
 </head>
 <body>
-	
+	  <!-- Sets the navigation bar -->
+	    <!-- Creates the query to find all the users -->
     <?php
 	require 'templates/navbar.php';
 	$stmt = $pdo -> prepare('SELECT * FROM users WHERE type = :type');
@@ -24,6 +26,7 @@
 	$user = $stmt->fetchAll();
 ?>
 <ul class="names">
+	<!-- Lists the users -->
 <?php
 
 foreach($user as $user )
@@ -31,9 +34,9 @@ foreach($user as $user )
 	echo '<li>Name: ' . $user['firstname']. $user['surname']. ' ' . '<a href="editUser.php?id=' . $user['user_id'] . '">Edit</a>' . ' ' . '<a href="deleteUser.php?id=' . $user['user_id'] . '">Delete</a>' . '</li>';
 
 }
-
 ?>
 </ul>
-    
-</body>
-</html>
+    <!-- Sets the footer -->
+<?php
+require 'templates/footer.php'
+?>
